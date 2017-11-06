@@ -1,0 +1,550 @@
+@import url('reset.css');
+@import url('fuentes.css');
+
+
+
+body{
+
+	background: #2d2d2d;
+	font-family: Arial,Helvetica,Sans-serif;
+}
+
+a{text-decoration:none; color: #fff;}
+
+a:hover{text-decoration: underline;}/*subrrayado*/
+
+#wrap{
+	width: 960px;
+	margin: auto;
+	clear: both;
+}
+/*header*/
+header{
+	width: 100%;
+	float: left;
+	background:#FFFFFF;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,e0e0e0+0,e0e0e0+100,258dc8+100,258dc8+101 */
+background: #258dc8; /* Old browsers */
+background: -moz-linear-gradient(top, #258dc8 0%, #e0e0e0 0%, #e0e0e0 100%, #258dc8 100%, #258dc8 101%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+
+box-shadow: 0px 3px 5px #000;/* para sombrear la caja de fondo del header*/
+-moz - box-shadow: 0px 3px 5px #000;
+-webkit - box-shadow: 0px 3px 5px #000;
+
+}
+
+#subheader{
+	width: 960px;
+	margin: auto;
+
+}
+
+
+
+
+#logotipo{
+
+	float: left;
+	width: 300px;
+	padding: 10px 0px;
+	
+
+}
+
+#logotipo  a{
+	font-family: sourcesans -light;
+	font-size:50px;
+	color: #000;
+	float: left;	
+}
+
+#logotipo a:hover{text-decoration: none;}
+
+
+
+
+/**menu*/
+
+header #subheader nav{
+	float:left; /*para todo vaya de izquierda a derecha*/
+	width: 660px;
+	padding: 30px 0px;/*para que se vea verticalmente centrado*/
+	text-align: right;/* para q se mueva hacia la de derecha*/
+}
+
+header #subheader nav ul li{
+	display: inline;/* para colocar el menu principal de forma horizontal*/
+	font font-family: sourcesans;
+}
+
+header #subheader nav ul li a{
+	color: #000;
+	font-size: 18px;
+	padding: 18px;/*para dar un espacio y separar el menu principal*/
+	
+   /* redondear bordes*/
+	border-radius: 5px;
+	-moz - border-radius: 5px;
+	-webkit - border-radius: 5px;
+}
+
+header #subheader nav ul li a{
+	color#fff;
+	background:#1798af;
+	text-decoration: none;/*para quitar el subbrayyado*/
+}
+
+/* header 2 */
+header #cabeza2{
+	margin:0;
+	padding:0;
+}
+
+header #cabeza2{
+	margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+ 
+header #cabeza2 nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:1000px;
+	width:90%;
+}
+ 
+header #cabeza2 nav ul {
+	list-style:none;
+}
+ 
+header #cabeza2 nav > ul {
+	display:table;
+	/*Quitamos el overflow hidden que estaba aqui*/
+	width:100%;
+	background:#000;
+	position:relative;
+}
+ 
+header #cabeza2 nav > ul li {
+	display:table-cell;
+}
+ 
+/*Sub-menu*/
+header #cabeza2 nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+ 
+header #cabeza2 nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:#000;
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+header #cabeza2 nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+header #cabeza2 nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+ 
+header #cabeza2 nav > ul > li > a span {
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+header #cabeza2 nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+ 
+header #cabeza2 nav > ul > li > a:hover > span {
+	top:0;
+}
+ 
+/*Colores*/
+header #cabeza2 nav ul li a .primero {
+	background:#0e5061;
+}
+ 
+header #cabeza2 nav ul li a .segundo {
+	background:#5da5a2;
+}
+ 
+header #cabeza2 nav ul li a .tercero {
+	background:#f25724;
+}
+ 
+header #cabeza2 nav ul li a .cuarto {
+	background:#174459;
+}
+ 
+header #cabeza2 nav ul li a .quinto {
+	background:#37a4d9;
+}
+/* fin de header 2*/
+
+
+
+
+/*Main video 7 de falcon master*/
+
+#main{
+
+width: 100%;
+margin: 20px 0px 0px 0px;
+float: left;
+
+}
+
+#slideshow{
+	width: 920px; /*tamanho horizontal*/
+	height: 260px;/*tamanho vertical*/
+	float: left;/*para que vaya de izquiersa a derecha*/
+	background: #000;/* fondo*/
+	border: solid 20px #fff;/*para agregar bordes*/
+	margin-bottom: 10px;/*margen para separarlo de lo q sigue en la parte de abajo*/
+ }
+
+.slidesjs-next.slidesjs-navigation {
+ visibility: hidden;
+ color: white;
+ padding: 5px;
+}
+
+.slidesjs-previous.slidesjs-navigation {
+ visibility: hidden;
+ color: white;
+ padding: 5px;
+}
+
+.slidesjs-pagination {
+ margin: -16px auto;
+ width: 100px;
+}
+
+.slidesjs-pagination li {
+ float: left;
+ margin: 0px 5px;
+ list-style: none;
+ background-color: white;
+ border-radius: 6px;
+}
+
+.slidesjs-pagination li a {
+ display: block;
+ width: 12px;
+ height: 0px;
+ padding-top: 12px;
+ float: left;
+ overflow: hidden;
+ border-radius: 6px;
+}
+
+.slidesjs-pagination li .active {
+ background-color: #1798af;
+}
+
+#slideshow img {
+ width: 920px;
+ height: 260px;
+}
+
+
+
+/*bienvenidos*/
+
+#Bienvenido{
+
+	width: 920px; /*tamano*/
+	float:left;  /*para que todo vaya de izquierda a derecha*/
+	padding: 20px;/*margenes de texto de cada lado se le restan a los 960*/
+	/*background: green;fondo*/
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e27878+0,a5009a+100 */
+background: #e27878; /* Old browsers */
+background: -moz-linear-gradient(top, #e27878 0%, #a5009a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e27878 0%,#a5009a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e27878 0%,#a5009a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e27878', endColorstr='#a5009a',GradientType=0 ); /* IE6-9 */
+
+
+
+
+	margin: 20px 0px; /* margen de la caja  20 hacia arriba y abajo y 0 a los lados
+esto lo q hace es separar la caja bienvenido de las otrar*/ 
+    
+/* border radius para redondear los bordes*/
+    border-radius: 5px;
+   -moz - border-radius: 5px;
+    - webkit- border-radius: 5px;
+
+box-shadow: 0px 2px 2px #000;/*agreagar sombra 2 hacia la derecha 2 hacia abajo 2 
+de tamano y un color negro*/
+-moz -  box-shadow: 0px 2px 2px #000;
+-webkit - box-shadow: 0px 2px 2px #000;
+
+}
+
+
+
+
+#Bienvenido article h2{
+
+	font-family: sourcesans -light;
+	color:#fff;
+	font-size:35px ;
+	margin-bottom: 10px;
+}
+
+#Bienvenido article{
+	color:#fff;
+	line-height: 27px;
+}
+
+
+/*contenido*/
+
+
+#contenido{
+width: 700px;
+float:left;
+}
+
+
+#hola{
+	color:#fff;
+}
+#contenido article{
+	float: left;
+	margin-bottom: 20px;
+}
+
+#contenido article .titulo{
+	font-size: 22px;
+	font-family: sourcesans;
+	color: #fff;
+}
+#contenido article .fecha{
+	font-size: 14px;
+	color: #1798af;
+	margin-bottom: 5px;
+}
+#contenido article .thumb1{
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+#contenido article .thumb{
+	width: 220px;
+	height: 150px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+
+#contenido article > p{
+	color: #8c8c8c;
+	font-size: 14px;
+	text-align: justify;
+
+}
+/*--------------contenido2- donde esta el articulo de la unefa-------------*/
+#contenido2{
+width: 100%;
+float:left;
+}
+
+#contenido2 article{
+	float: left;
+	margin-bottom: 20px;
+}
+
+#contenido2 article .titulo{
+	font-size: 22px;
+	font-family: sourcesans;
+	color: #fff;
+}
+#contenido2 article .fecha{
+	font-size: 14px;
+	color: #1798af;
+	margin-bottom: 5px;
+}
+
+#contenido2 article .thumb{
+	width: 150px;
+	
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+
+#contenido2 article > p{
+	color: #8c8c8c;
+	font-size: 14px;
+	text-align: justify;
+
+}
+
+/*sidebar----*/
+
+aside{
+	width: 220px;
+	float:left;
+	margin-left: 20px;
+	background: #4d78b3;
+	padding: 10px 10px 0px 10px;
+	border-radius: 5px;
+	-moz - border-radius: 5px;
+	-webkit - border-radius: 5px;
+	box-shadow: 0px 2px 2px #000;
+	-moz -box-shadow: 0px 2px 2px #000;
+	-webkit -box-shadow: 0px 2px 2px #000;
+}
+
+aside .widget img{
+    width: 220px;
+	height: 150px;
+}
+
+aside .widget{
+	margin-bottom: 10px;
+	float: left;
+}
+aside .widget > h3{
+	background: #fff;
+	color: #4d78b3;	
+	width: 220px;
+	padding: 10px 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+aside .widget a{color: #fff;}
+aside .widget ul li{margin-bottom: 5px;margin: 20px 0px;}
+
+#tesis
+
+
+/*----footer*/
+
+footer{ 
+width: 100%;
+float: left;
+clear: both;
+box-shadow: 0px 2px 2px #000;
+-moz -box-shadow: 0px 2px 2px #000;
+-webkit -box-shadow: 0px 2px 2px #000; 
+border-radius: 5px;
+	-moz - border-radius: 5px;
+	-webkit - border-radius: 5px;
+
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2f2f2f+1,242424+100 */
+background: #2f2f2f; /* Old browsers */
+background: -moz-linear-gradient(top, #2f2f2f 1%, #242424 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #2f2f2f 1%,#242424 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #2f2f2f 1%,#242424 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2f2f', endColorstr='#242424',GradientType=0 ); /* IE6-9 */
+}
+
+footer section{
+	width: 440px;
+	float: left;
+	padding: 20px;
+}
+footer #acerca-de{
+	font font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	color: #8c8c8c;
+	text-align: justify;
+	line-height: 20px;
+}
+
+footer #acerca-de h3{
+	font-family: sourcesans-light;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 5px;
+}
+footer #redes-s > div {
+	width: 220px;
+	height: 60px;
+	float: left;
+	background: #ff8000;
+	opacity: 0.5;
+}
+footer #redes-s > div a{
+	width: 220px;
+	height: 60px;
+	display: inline-block;
+}
+footer #redes-s .email{
+	background:url(../imagenes/correo3.png);
+	margin-bottom: 15px;
+	
+}
+footer #redes-s .twitter{
+	background:url(../imagenes/twiter.png);
+	margin-bottom: 15px;
+	
+}
+footer #redes-s .youtube{
+	background:url(../imagenes/youtube.png);
+
+}
+footer #redes-s .facebook{
+	background:url(../imagenes/facebook.png);
+	}
+footer #redes-s > div:hover{
+	opacity: 1;
+}	
+
+#copyright{
+	float: left;
+	width: 960px;
+	margin: 10px 0px;
+}
+#copyright{
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	font-family:Arial,Helvetica,Sans-serif;
+}
