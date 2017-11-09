@@ -211,7 +211,7 @@ header #cabeza2 nav ul li a .segundo {
 }
  
 header #cabeza2 nav ul li a .tercero {
-	background:#f25724;
+	background:#8A2BE2;
 }
  
 header #cabeza2 nav ul li a .cuarto {
@@ -429,7 +429,7 @@ aside{
 	width: 220px;
 	float:left;
 	margin-left: 20px;
-	background: #4d78b3;
+	background: #8A2BE2;
 	padding: 10px 10px 0px 10px;
 	border-radius: 5px;
 	-moz - border-radius: 5px;
@@ -440,8 +440,8 @@ aside{
 }
 
 aside .widget img{
-    width: 220px;
-	height: 150px;
+    width: 280px;
+	/*height: 150px;*/
 }
 
 aside .widget{
