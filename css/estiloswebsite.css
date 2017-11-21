@@ -243,6 +243,7 @@ float: left;
 	background: #000;/* fondo*/
 	border: solid 20px #fff;/*para agregar bordes*/
 	margin-bottom: 10px;/*margen para separarlo de lo q sigue en la parte de abajo*/
+	overflow: hidden; //para esconder los elementos q queden fuera
  }
 
 .slidesjs-next.slidesjs-navigation {
@@ -387,10 +388,11 @@ float:left;
 	text-align: justify;
 
 }
-/*--------------contenido2- donde esta el articulo de la unefa-------------*/
+/*--------------contenido2- donde esta el articulo de la tesis-------------*/
 #contenido2{
 width: 100%;
 float:left;
+margin: 20px 0px;
 }
 
 #contenido2 article{
