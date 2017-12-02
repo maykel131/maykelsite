@@ -18,47 +18,62 @@ a:hover{text-decoration: underline;}/*subrrayado*/
 	margin: auto;
 	clear: both;
 }
-/*header*/
+/*-------------------------------header-------------------------------*/
 header{
+
 	width: 100%;
 	float: left;
-	background:#FFFFFF;
+	
+	height: 128px;
+	
+	
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,e0e0e0+0,e0e0e0+100,258dc8+100,258dc8+101 */
-background: #258dc8; /* Old browsers */
-background: -moz-linear-gradient(top, #258dc8 0%, #e0e0e0 0%, #e0e0e0 100%, #258dc8 100%, #258dc8 101%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+	background: #258dc8; /* Old browsers */
+	background: -moz-linear-gradient(top, #258dc8 0%, #e0e0e0 0%, #e0e0e0 100%, #258dc8 100%, #258dc8 101%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
 
 box-shadow: 0px 3px 5px #000;/* para sombrear la caja de fondo del header*/
 -moz - box-shadow: 0px 3px 5px #000;
 -webkit - box-shadow: 0px 3px 5px #000;
+position: fixed;
+z-index: 2000;
+
 
 }
 
 #subheader{
 	width: 960px;
 	margin: auto;
+	
+	display: flex;
+
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: center;
+
 
 }
-
+  
+  #logoo{
+  	width: 200px;
+  	overflow: hidden;
+  }
 
 
 
 #logotipo{
-
-	float: left;
-	width: 300px;
 	padding: 10px 0px;
-	
-
+	display: flex;
 }
 
 #logotipo  a{
 	font-family: sourcesans -light;
 	font-size:50px;
 	color: #000;
-	float: left;	
+	display: flex;
+	align-items: flex-end;	
 }
 
 #logotipo a:hover{text-decoration: none;}
@@ -68,43 +83,16 @@ box-shadow: 0px 3px 5px #000;/* para sombrear la caja de fondo del header*/
 
 /**menu*/
 
-header #subheader nav{
-	float:left; /*para todo vaya de izquierda a derecha*/
-	width: 660px;
-	padding: 30px 0px;/*para que se vea verticalmente centrado*/
-	text-align: right;/* para q se mueva hacia la de derecha*/
-}
 
-header #subheader nav ul li{
-	display: inline;/* para colocar el menu principal de forma horizontal*/
-	font font-family: sourcesans;
-}
 
-header #subheader nav ul li a{
-	color: #000;
-	font-size: 18px;
-	padding: 18px;/*para dar un espacio y separar el menu principal*/
-	
-   /* redondear bordes*/
-	border-radius: 5px;
-	-moz - border-radius: 5px;
-	-webkit - border-radius: 5px;
-}
-
-header #subheader nav ul li a{
-	color#fff;
-	background:#1798af;
-	text-decoration: none;/*para quitar el subbrayyado*/
-}
-
-/* header 2 */
+/*---------------------------------------------------- header 2---------------------------------------------------- */
 header #cabeza2{
 	margin:0;
 	padding:0;
 }
 
 header #cabeza2{
-	margin-top:10px;
+	
     width: 100%;
     overflow: hidden;
     height: 150px;
@@ -141,6 +129,7 @@ header #cabeza2 nav > ul li {
 header #cabeza2 nav > ul > li:hover > ul {
 	display:block;
 	height:100%;
+	z-index: 1000;
 }
  
 header #cabeza2 nav > ul > li > ul {
@@ -175,6 +164,7 @@ header #cabeza2 nav > ul li a {
  
 header #cabeza2 nav > ul > li > ul > li a:hover {
 	background:#5da5a2;
+	z-index: 1000;
 }
  
 header #cabeza2 nav > ul > li > a span {
@@ -199,6 +189,7 @@ header #cabeza2 nav > ul > li > a span .icon {
  
 header #cabeza2 nav > ul > li > a:hover > span {
 	top:0;
+	z-index: 1000;
 }
  
 /*Colores*/
@@ -242,8 +233,10 @@ float: left;
 	float: left;/*para que vaya de izquiersa a derecha*/
 	background: #000;/* fondo*/
 	border: solid 20px #fff;/*para agregar bordes*/
+	margin-top: 130px;
 	margin-bottom: 10px;/*margen para separarlo de lo q sigue en la parte de abajo*/
-	overflow: hidden; //para esconder los elementos q queden fuera
+	overflow: hidden; /*para esconder los elementos q queden fuera*/
+
  }
 
 .slidesjs-next.slidesjs-navigation {
@@ -467,7 +460,7 @@ aside .widget ul li{margin-bottom: 5px;margin: 20px 0px;}
 aside .widget a:visited {color: 	#000000;}
 aside .widget a:link {color: 	#fff;}
 
-#tesis
+
 
 
 /*----footer*/
