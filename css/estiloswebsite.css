@@ -4,8 +4,8 @@
 
 
 body{
-
-	background: #2d2d2d;
+    background: white;
+/*	background: #2d2d2d*/;
 	font-family: Arial,Helvetica,Sans-serif;
 }
 
@@ -33,12 +33,14 @@ header{
 	background: -webkit-linear-gradient(top, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+ /*
+ box-shadow: 0px 3px 5px #000;/* para sombrear la caja de fondo del header*/
+ /* -moz - box-shadow: 0px 3px 5px #000;
+  -webkit - box-shadow: 0px 3px 5px #000;*/
 
-box-shadow: 0px 3px 5px #000;/* para sombrear la caja de fondo del header*/
--moz - box-shadow: 0px 3px 5px #000;
--webkit - box-shadow: 0px 3px 5px #000;
-position: fixed;
-z-index: 2000;
+
+  position: fixed;
+  z-index: 2000;
 
 
 }
@@ -89,13 +91,18 @@ z-index: 2000;
 header #cabeza2{
 	margin:0;
 	padding:0;
+	font-family: George;
+	font-size: 20px;
+
 }
 
 header #cabeza2{
 	
     width: 100%;
-    overflow: hidden;
-    height: 150px;
+    /*overflow: hidden;*/
+
+    /*cambiado*/
+  /*  height: 500px;*/
     position: relative;
 }
  
@@ -117,7 +124,7 @@ header #cabeza2 nav > ul {
 	display:table;
 	/*Quitamos el overflow hidden que estaba aqui*/
 	width:100%;
-	background:#000;
+/*	background:#000;*/
 	position:relative;
 }
  
@@ -127,26 +134,34 @@ header #cabeza2 nav > ul li {
  
 /*Sub-menu*/
 header #cabeza2 nav > ul > li:hover > ul {
-	display:block;
+/*	/*display:block;*/
 	height:100%;
 	z-index: 1000;
+
 }
- 
-header #cabeza2 nav > ul > li > ul {
-	display:block;
-	position:absolute;
-	background:#000;
-	left:0;
-	right:0;
-	overflow:hidden;
+
+
+
+
+header #cabeza2  nav> ul> li> ul{
+	
 	height:0%;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
-}
- 
+ /*   position:absolute;*/
+
+    display: block;
+    width: auto;
+    height: 0px;
+	display: flex;
+	flex-direction: column;
+	
+	overflow: hidden;
+
+	
+} 
+
+
+
+
 header #cabeza2 nav > ul li a {
 	color:#fff;
 	display:block;
@@ -155,41 +170,63 @@ header #cabeza2 nav > ul li a {
 	position: relative;
 	text-align:center;
 	text-decoration:none;
+
+
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
- 
+/* colores del menu*/
+header #cabeza2 nav > ul li .menu.uno{ background:#346998; }
+header #cabeza2 nav > ul li .menu { background: #49A8FA; }
+
+
+/* colores del sub menu*/
+header #cabeza2 nav > ul > li > ul > li a{
+background:	#87CEFA;
+}
 header #cabeza2 nav > ul > li > ul > li a:hover {
 	background:#5da5a2;
 	z-index: 1000;
 }
  
 header #cabeza2 nav > ul > li > a span {
+	
 	background:#174459;
 	display:block;
-	height:100%;
+/*	height:100%;*/
+    height: 0px;
 	width:100%;
 	left:0;
 	position:absolute;
 	top:-55px;
+	/**/
+	overflow: hidden;
+	/**/
+	/*
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
 	-o-transition: all .3s ease;
-	transition: all .3s ease;
+	transition: all .3s ease;*/
 }
  
 header #cabeza2 nav > ul > li > a span .icon {
 	display:block;
 	line-height:60px;
+
 }
  
 header #cabeza2 nav > ul > li > a:hover > span {
+	/**/
+	overflow: hidden;
+	/**/
+	height: 100%;
 	top:0;
 	z-index: 1000;
+
 }
  
 /*Colores*/
@@ -204,6 +241,7 @@ header #cabeza2 nav ul li a .segundo {
 header #cabeza2 nav ul li a .tercero {
 	background:#8A2BE2;
 }
+
  
 header #cabeza2 nav ul li a .cuarto {
 	background:#174459;
@@ -232,22 +270,23 @@ float: left;
 	height: 260px;/*tamanho vertical*/
 	float: left;/*para que vaya de izquiersa a derecha*/
 	background: #000;/* fondo*/
-	border: solid 20px #fff;/*para agregar bordes*/
+	border: solid 20px black;/*para agregar bordes*/
 	margin-top: 130px;
 	margin-bottom: 10px;/*margen para separarlo de lo q sigue en la parte de abajo*/
 	overflow: hidden; /*para esconder los elementos q queden fuera*/
+
 
  }
 
 .slidesjs-next.slidesjs-navigation {
  visibility: hidden;
- color: white;
+ color: black;
  padding: 5px;
 }
 
 .slidesjs-previous.slidesjs-navigation {
  visibility: hidden;
- color: white;
+ color: black;
  padding: 5px;
 }
 
@@ -257,10 +296,10 @@ float: left;
 }
 
 .slidesjs-pagination li {
- float: left;
+
  margin: 0px 5px;
  list-style: none;
- background-color: white;
+ background-color: black;
  border-radius: 6px;
 }
 
@@ -272,6 +311,7 @@ float: left;
  float: left;
  overflow: hidden;
  border-radius: 6px;
+ background: black;
 }
 
 .slidesjs-pagination li .active {
@@ -292,13 +332,16 @@ float: left;
 	width: 920px; /*tamano*/
 	float:left;  /*para que todo vaya de izquierda a derecha*/
 	padding: 20px;/*margenes de texto de cada lado se le restan a los 960*/
-	/*background: green;fondo*/
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e27878+0,a5009a+100 */
-background: #e27878; /* Old browsers */
-background: -moz-linear-gradient(top, #e27878 0%, #a5009a 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #e27878 0%,#a5009a 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #e27878 0%,#a5009a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e27878', endColorstr='#a5009a',GradientType=0 ); /* IE6-9 */
+/*	background: #CD853F;*/
+background:rgba(0,0,0,0.1);
+
+color: black;
+	
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e27878+0,a5009a+100 */
+ /*background:#CD853F; /* Old browsers */
+ /*background: -moz-linear-gradient(top, #CD853F 0%,#B8860B 100%); /* FF3.6-15 */
+ /*background: -webkit-linear-gradient(top, #CD853F 0%,#B8860B 100%); /* Chrome10-25,Safari5.1-6 */
+ /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e27878', endColorstr='#a5009a',GradientType=0 ); /* IE6-9 */
 
 
 
@@ -310,11 +353,11 @@ esto lo q hace es separar la caja bienvenido de las otrar*/
     border-radius: 5px;
    -moz - border-radius: 5px;
     - webkit- border-radius: 5px;
-
+/*
 box-shadow: 0px 2px 2px #000;/*agreagar sombra 2 hacia la derecha 2 hacia abajo 2 
 de tamano y un color negro*/
--moz -  box-shadow: 0px 2px 2px #000;
--webkit - box-shadow: 0px 2px 2px #000;
+ /*-moz -  box-shadow: 0px 2px 2px #000;
+-webkit - box-shadow: 0px 2px 2px #000;*/
 
 }
 
@@ -324,13 +367,13 @@ de tamano y un color negro*/
 #Bienvenido article h2{
 
 	font-family: sourcesans -light;
-	color:#fff;
+/*	color:#fff;*/
 	font-size:35px ;
 	margin-bottom: 10px;
 }
 
 #Bienvenido article{
-	color:#fff;
+/*	color:#fff;*/
 	line-height: 27px;
 }
 
@@ -345,7 +388,7 @@ float:left;
 
 
 #hola{
-	color:#fff;
+	color:#000;
 }
 #contenido article{
 	float: left;
@@ -355,7 +398,7 @@ float:left;
 #contenido article .titulo{
 	font-size: 22px;
 	font-family: sourcesans;
-	color: #fff;
+	color: #000;
 }
 #contenido article .fecha{
 	font-size: 14px;
@@ -376,9 +419,10 @@ float:left;
 }
 
 #contenido article > p{
-	color: #8c8c8c;
-	font-size: 14px;
+	color: black;
+	font-size: 16px;
 	text-align: justify;
+	line-height: 30px;
 
 }
 /*--------------contenido2- donde esta el articulo de la tesis-------------*/
@@ -396,7 +440,7 @@ margin: 20px 0px;
 #contenido2 article .titulo{
 	font-size: 22px;
 	font-family: sourcesans;
-	color: #fff;
+	color: black;
 }
 #contenido2 article .fecha{
 	font-size: 14px;
@@ -412,9 +456,10 @@ margin: 20px 0px;
 }
 
 #contenido2 article > p{
-	color: #8c8c8c;
-	font-size: 14px;
+	color: black;
+	font-size: 16px;
 	text-align: justify;
+	line-height: 30px;
 
 }
 
@@ -424,7 +469,7 @@ aside{
 	width: 180px;
 	float:left;
 	margin-left: 20px;
-	background: #8A2BE2;
+	background: #FFF8DC;
 	padding: 10px 10px 0px 10px;
 	border-radius: 5px;
 	-moz - border-radius: 5px;
@@ -433,7 +478,7 @@ aside{
 	-moz -box-shadow: 0px 2px 2px #000;
 	-webkit -box-shadow: 0px 2px 2px #000;
 	
-	border: 20px ridge 	#A0522D;
+	border: 20px ridge  #CD853F;;
 }
 
 aside .widget img{
@@ -446,7 +491,7 @@ aside .widget{
 	float: left;
 }
 aside .widget > h3{
-	background: #fff;
+
 	color: #4d78b3;	
 	width: 180px;
 	padding: 10px 0px;
@@ -454,11 +499,12 @@ aside .widget > h3{
 	font-weight: bold;
 }
 
-aside .widget a{color: #fff;}
+aside .widget a{color: black;}
+aside .widget a:hover{color: #8A2BE2;}
 aside .widget ul li{margin-bottom: 5px;margin: 20px 0px;}
 
-aside .widget a:visited {color: 	#000000;}
-aside .widget a:link {color: 	#fff;}
+/*aside .widget a:visited {color: 	#000000;}
+aside .widget a:link {color: 	#fff;}*/
 
 
 
@@ -475,6 +521,9 @@ box-shadow: 0px 2px 2px #000;
 border-radius: 5px;
 	-moz - border-radius: 5px;
 	-webkit - border-radius: 5px;
+
+
+
 
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2f2f2f+1,242424+100 */
@@ -545,7 +594,7 @@ footer #redes-s > div:hover{
 #copyright{
 	text-align: center;
 	font-size: 12px;
-	color: #fff;
+	color: black;
 	font-family:Arial,Helvetica,Sans-serif;
 }
 
@@ -584,4 +633,163 @@ footer #redes-s > div:hover{
 .social ul li a:hover{
 	padding: 10px 30px;
 	background: #000;
+}
+
+
+
+/* ------------------------ colores de las pestanas elegidas --------------------------------*/
+header #cabeza2 nav > ul #ser a {
+	color: black;
+	
+
+	background: #258dc8; /* Old browsers */
+	background: -moz-linear-gradient(top, #258dc8 0%, #e0e0e0 0%, #e0e0e0 100%, #258dc8 100%, #258dc8 101%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+}
+#ser{
+	
+	background: #258dc8; /* Old browsers */
+	background: -moz-linear-gradient(top, #258dc8 0%, #e0e0e0 0%, #e0e0e0 100%, #258dc8 100%, #258dc8 101%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+}
+/* ---------------------------- pagina 1  ---------------------------------*/
+
+body #wrapp{
+   
+   	clear: both;
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+#contenido3{
+
+
+margin: 100px 0 10px 0px;	
+padding-top: 40px;
+width: 100%;
+
+
+display: flex;
+flex-direction: column;
+
+}
+
+#contenido3 .clases1{
+	width: 100%;
+    background: white;
+  
+      height: 500px; 
+    display: flex;
+    justify-content: center;
+
+}
+
+#contenido3 .clases2{
+	width: 100%;
+    background:#F5F5F5;
+
+     height: 500px;
+
+    display: flex;
+    justify-content: center;
+
+ background:  #e0e0e0;
+    /*background:#F5F5F5;*/
+   
+
+}
+#contenido3 div article {
+ 
+  width: 1200px;
+  padding:0;
+  border: 0; 
+   
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contenido3 div article .imagenn{ 
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+
+#contenido3 div article .imagenn img {
+	width: 400px;
+}
+
+#contenido3 div article .conte{	
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#contenido3 div article h3{
+	font-size: 25px;
+	color: black;
+	font-weight: bold;
+	font-family: Georgia;
+}
+
+#contenido3 div article .conte p{
+   color: black;
+	font-size: 20px;
+	font-family: Georgia;
+}
+#contenido3 div article .conte  .boton{
+	background: #8A2BE2;
+	
+	width: 150px;
+	margin: 5px;
+	text-decoration: none;
+	padding: 20px;
+	text-align: center;
+	border-radius: 25px;
+	transition: all 0.3s;
+
+
+}
+#contenido3 div article .conte  .boton:hover{
+   
+	background: white;
+	color: #8A2BE2;
+	border:2px solid #8A2BE2;
+	transition: all 0.3s ease;
+    
+    display: inline-block;
+    width: 150px;
+	margin: 5px;
+	padding: 20px;
+	
+	text-align: center;
+
+}
+
+#contenido3 div article .conte .tele{
+    color: #8A2BE2;
+	font-size: 20px;
+	font-family: Georgia;
+
+}
+footer{
+	display: flex;
+	justify-content: center;
+}
+
+footer #contefur{
+	 width: 1200px;
 }
