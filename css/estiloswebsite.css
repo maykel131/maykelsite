@@ -7,24 +7,24 @@ body{
     background: white;
 /*	background: #2d2d2d*/;
 	font-family: Arial,Helvetica,Sans-serif;
+
+	display: flex;
+	justify-content: center;
 }
 
 a{text-decoration:none; color: #fff;}
 
 a:hover{text-decoration: underline;}/*subrrayado*/
 
-#wrap{
-	width: 960px;
-	margin: auto;
-	clear: both;
-}
+
 /*-------------------------------header-------------------------------*/
 header{
-
+    
 	width: 100%;
-	float: left;
+	/*float: left;*/
 	
 	height: 128px;
+
 	
 	
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,e0e0e0+0,e0e0e0+100,258dc8+100,258dc8+101 */
@@ -45,8 +45,13 @@ header{
 
 }
 
+#cabeza1 {
+	width: 100%;
+	text-align: center;
+}
+
 #subheader{
-	width: 960px;
+	width:auto;
 	margin: auto;
 	
 	display: flex;
@@ -54,28 +59,36 @@ header{
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: center;
-
+    
 
 }
   
   #logoo{
-  	width: 200px;
+
   	overflow: hidden;
   }
+   #logoo img{
+   	padding-top: 5px;
+    height: 75px;
+    
+   }
 
 
 
 #logotipo{
 	padding: 10px 0px;
 	display: flex;
+	
+	
 }
 
 #logotipo  a{
+	
 	font-family: sourcesans -light;
 	font-size:50px;
 	color: #000;
-	display: flex;
-	align-items: flex-end;	
+	
+	
 }
 
 #logotipo a:hover{text-decoration: none;}
@@ -102,8 +115,10 @@ header #cabeza2{
     /*overflow: hidden;*/
 
     /*cambiado*/
-  /*  height: 500px;*/
+    /*  height: 500px;*/
     position: relative;
+    background: black;
+
 }
  
 header #cabeza2 nav {
@@ -170,6 +185,11 @@ header #cabeza2 nav > ul li a {
 	position: relative;
 	text-align:center;
 	text-decoration:none;
+
+  /*  height: 60px;*/
+
+
+	flex-grow: 1;
 
 
 	-webkit-transition: all .3s ease;
@@ -263,74 +283,35 @@ width: 100%;
 margin: 20px 0px 0px 0px;
 float: left;
 
+
 }
 
-#slideshow{
-	width: 920px; /*tamanho horizontal*/
-	height: 260px;/*tamanho vertical*/
-	float: left;/*para que vaya de izquiersa a derecha*/
-	background: #000;/* fondo*/
-	border: solid 20px black;/*para agregar bordes*/
-	margin-top: 130px;
-	margin-bottom: 10px;/*margen para separarlo de lo q sigue en la parte de abajo*/
-	overflow: hidden; /*para esconder los elementos q queden fuera*/
-
-
- }
-
-.slidesjs-next.slidesjs-navigation {
- visibility: hidden;
- color: black;
- padding: 5px;
-}
-
-.slidesjs-previous.slidesjs-navigation {
- visibility: hidden;
- color: black;
- padding: 5px;
-}
-
-.slidesjs-pagination {
- margin: -16px auto;
- width: 100px;
-}
-
-.slidesjs-pagination li {
-
- margin: 0px 5px;
- list-style: none;
- background-color: black;
- border-radius: 6px;
-}
-
-.slidesjs-pagination li a {
- display: block;
- width: 12px;
- height: 0px;
- padding-top: 12px;
- float: left;
- overflow: hidden;
- border-radius: 6px;
- background: black;
-}
-
-.slidesjs-pagination li .active {
- background-color: #1798af;
-}
-
-#slideshow img {
- width: 920px;
- height: 260px;
-}
 
 
 
 /*bienvenidos*/
 
-#Bienvenido{
+#wrap{
+	width: 80%;
+	margin: auto;
+/*	clear: both;*/
 
-	width: 920px; /*tamano*/
-	float:left;  /*para que todo vaya de izquierda a derecha*/
+	/*FLEX*/
+
+}
+
+
+#wrap #main .slider{
+   margin-top: 130px;
+	width: 100%;
+}
+
+
+
+#Bienvenido{
+   box-sizing: border-box;
+	width: 100%; /*tamano*/
+/*	float:left;  /*para que todo vaya de izquierda a derecha*/
 	padding: 20px;/*margenes de texto de cada lado se le restan a los 960*/
 /*	background: #CD853F;*/
 background:rgba(0,0,0,0.1);
@@ -381,8 +362,16 @@ de tamano y un color negro*/
 /*contenido*/
 
 
+.centro{
+display: flex;
+justify-content: row; 
+box-sizing: border-box;
+
+}
+
 #contenido{
-width: 700px;
+width: 80%;
+flex:1;
 float:left;
 }
 
@@ -463,11 +452,20 @@ margin: 20px 0px;
 
 }
 
+#wrap #main #contenido2 iframe{
+	width: 100%;
+	height: 500px;
+}
+
 /*sidebar----*/
 
 aside{
-	width: 180px;
-	float:left;
+	width: 20%;
+	min-width: 230px;
+	max-height: 700px;
+/*	float:left;*/
+    
+    box-sizing: border-box;
 	margin-left: 20px;
 	background: #FFF8DC;
 	padding: 10px 10px 0px 10px;
@@ -482,18 +480,19 @@ aside{
 }
 
 aside .widget img{
-    width: 180px;
+	width: 100%;
+    /*width: 180px;
 	/*height: 150px;*/
 }
 
 aside .widget{
 	margin-bottom: 10px;
-	float: left;
+	
 }
 aside .widget > h3{
 
 	color: #4d78b3;	
-	width: 180px;
+/*	width: 180px;*/
 	padding: 10px 0px;
 	text-align: center;
 	font-weight: bold;
@@ -522,9 +521,8 @@ border-radius: 5px;
 	-moz - border-radius: 5px;
 	-webkit - border-radius: 5px;
 
-
-
-
+margin-bottom:10px;
+margin-top: 10px;
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2f2f2f+1,242424+100 */
 background: #2f2f2f; /* Old browsers */
@@ -535,8 +533,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2f2f', end
 }
 
 footer section{
-	width: 440px;
-	float: left;
+	width: 50%;
 	padding: 20px;
 }
 footer #acerca-de{
@@ -586,17 +583,29 @@ footer #redes-s > div:hover{
 	opacity: 1;
 }	
 
-#copyright{
-	float: left;
-	width: 960px;
-	margin: 10px 0px;
-}
-#copyright{
+
+#copyright{  
+
+	padding: 10px;
+   height: 200px;
+    margin-top: 10px;
+	width: 100%;
 	text-align: center;
 	font-size: 12px;
 	color: black;
 	font-family:Arial,Helvetica,Sans-serif;
+	
 }
+
+#wrap #main #copyright p{
+
+	padding-top: 50px;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
 
 
 
@@ -638,34 +647,19 @@ footer #redes-s > div:hover{
 
 
 /* ------------------------ colores de las pestanas elegidas --------------------------------*/
-header #cabeza2 nav > ul #ser a {
-	color: black;
-	
 
-	background: #258dc8; /* Old browsers */
-	background: -moz-linear-gradient(top, #258dc8 0%, #e0e0e0 0%, #e0e0e0 100%, #258dc8 100%, #258dc8 101%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
-}
-#ser{
-	
-	background: #258dc8; /* Old browsers */
-	background: -moz-linear-gradient(top, #258dc8 0%, #e0e0e0 0%, #e0e0e0 100%, #258dc8 100%, #258dc8 101%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #258dc8 0%,#e0e0e0 0%,#e0e0e0 100%,#258dc8 100%,#258dc8 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
-}
+
 /* ---------------------------- pagina 1  ---------------------------------*/
 
 body #wrapp{
    
-   	clear: both;
 
 	display: flex;
 	flex-direction: column;
 
 }
+
+
 
 
 #contenido3{
@@ -681,52 +675,84 @@ flex-direction: column;
 
 }
 
-#contenido3 .clases1{
+
+
+#contenido3 .clase.clases1{
 	width: 100%;
     background: white;
   
-      height: 500px; 
+      height: auto; 
     display: flex;
     justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
 
 }
 
-#contenido3 .clases2{
+#contenido3 .clase.clases2{
 	width: 100%;
     background:#F5F5F5;
 
-     height: 500px;
-
+     height: auto;
     display: flex;
     justify-content: center;
 
- background:  #e0e0e0;
+    flex-direction: column;
+    align-items: center;
+
+/* background:  #e0e0e0;*
     /*background:#F5F5F5;*/
    
 
 }
 #contenido3 div article {
  
-  width: 1200px;
-  padding:0;
+  width: 80%;
+  padding: 25px 5px;
   border: 0; 
    
-  display: flex;
+ /* display: flex;
   flex-direction: row;
-  align-items: center;
+ /* align-items: center;*/
+/*  flex-wrap: wrap;*/
+
+    display: flex;
+	flex-direction:row;
+	justify-content: center;
+
 }
+#contenido3 div .titu {
+	width: 100%;
+    display: flex;
+    
+    justify-content: center;
+
+}
+#contenido3 div .titu h3 {
+	width:auto;font-size: 25px;
+	color: black;
+	font-weight: bold;
+	font-family: Georgia;
+	padding-top: 25px; }
 
 #contenido3 div article .imagenn{ 
   width: 40%;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
  
  }
 
+
 #contenido3 div article .imagenn img {
-	width: 400px;
+	width: 100%;
+	padding: 10px;
+}
+#contenido3 div article .imagenn h3 {
+	padding:10px 0px 20px 5px;
 }
 
 #contenido3 div article .conte{	
@@ -738,22 +764,19 @@ flex-direction: column;
 	
 }
 
-#contenido3 div article h3{
-	font-size: 25px;
-	color: black;
-	font-weight: bold;
-	font-family: Georgia;
-}
+
 
 #contenido3 div article .conte p{
    color: black;
 	font-size: 20px;
 	font-family: Georgia;
+	line-height: 30px;
 }
 #contenido3 div article .conte  .boton{
 	background: #8A2BE2;
 	
-	width: 150px;
+	width: 250px;
+
 	margin: 5px;
 	text-decoration: none;
 	padding: 20px;
@@ -761,6 +784,7 @@ flex-direction: column;
 	border-radius: 25px;
 	transition: all 0.3s;
 
+   border:2px solid  #8A2BE2;
 
 }
 #contenido3 div article .conte  .boton:hover{
@@ -771,11 +795,12 @@ flex-direction: column;
 	transition: all 0.3s ease;
     
     display: inline-block;
-    width: 150px;
+  
 	margin: 5px;
 	padding: 20px;
 	
 	text-align: center;
+
 
 }
 
@@ -791,5 +816,64 @@ footer{
 }
 
 footer #contefur{
-	 width: 1200px;
+	 width: 80%;
 }
+
+
+@media screen and (max-width: 800px) {
+
+	header #cabeza2 nav{
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 800px) {
+
+	header #cabeza2 nav{
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 1200px){
+			
+			#contenido3 div article {
+		    width: 80%;
+		     padding: 25px 5px;
+		    border: 0; 
+		    display: flex;
+			flex-direction:column;
+			justify-content: center;
+		  }
+		  #contenido3 .clase.clases2 article {
+		    width: 80%;
+		     padding: 25px 5px;
+		    border: 0; 
+		    display: flex;
+			flex-direction:column-reverse;
+			justify-content: center;
+		  }
+
+    	#contenido3 div article .imagenn{ 
+		  width: 100%;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+		 }
+
+		 #contenido3 div article .imagenn img{
+		 	width: 400px;
+		 } 
+
+		 #contenido3 div article .conte{	
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			
+		  }
+}
+	

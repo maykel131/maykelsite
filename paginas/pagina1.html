@@ -11,54 +11,61 @@
       <!-- aqui hacemos referencia a la carpeta de iconos-->
 
       <link rel="shortcut icon" href="iconos/emble.ico">
+
+
+      <!--                 slider new                 -->
+              <link rel="stylesheet" href="../slider/css/nivo-slider.css">
+              <link rel="stylesheet" href="../slider/css/mi-slider.css">
+
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+              <script src="../slider/js/jquery.nivo.slider.js"></script>
+
+              <script type="text/javascript"> 
+                $(window).on('load', function() {
+                    $('#slider').nivoSlider(); 
+                }); 
+              </script>
+       <!--                 slider new                 -->
       
 
       <!---slider   -->
 
-      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-      <script src="../js/jquery.slides.min.js"></script>
-      <script>
-        $(function(){
-          $("#slideshow").slidesjs()
-        });
-      </script>
-
+     
      <!-- final del slider-->
 
          <title> Website del Ingeniero Maykel Trejo</title>
   </head>
 
   <body>
-  	<header>
+    	<header>
       <section id="cabeza1">
   	  <div id="subheader">
-         <div id="logoo"> <img src="../imagenes/logo.png"> </div>
+         <div id="logoo"> <img src="../imagenes/trilogia.png"> </div>
          <div id="logotipo"><a href=""> Wolfobiecer </a></div>
   	  </div>
      </section>
 
       <!-- menu2 -->
-   <section id="cabeza2">
-    <nav>
-      <ul>
-          <li><a class="menu dos" href="../index.html"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
-          <li><a class="menu uno" href="#"><span class="tercero"><i class="icon icon-briefcase"></i></span>Servicios</a></li>
-          <li><a class="menu tres" href="#"><span class="segundo"><i class="icon icon-pencil"></i></span>Categorias</a></li>
-          <li><a class="menu cuatro" href="#"><span class="cuarto"><i class="icon icon-database"></i></span>Acerca de</a></li>
-          <li><a class="menu cinco" href="#"><span class="quinto"><i class="icon icon-whatsapp"></i></span>Contacto</a>
+      <section id="cabeza2">
+       <nav>
+         <ul>
+            <li><a  class="menu dos" href="../index.html"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+            <li><a class="menu uno" href="#"><span class="tercero"><i class="icon icon-briefcase"></i></span>Servicios</a></li>
+            <li><a class="menu tres" href="#"><span class="segundo"><i class="icon icon-pencil"></i></span>Categorias</a></li>
+            <li><a class="menu cuatro" href="#"><span class="cuarto"><i class="icon icon-database"></i></span>Block</a></li>
+            <li><a class="menu cinco" href="#"><span class="quinto"><i class="icon icon-whatsapp"></i></span>Contacto</a>
               <ul>
-                 <li><a href="https://www.facebook.com/Maykel.el.LEON">Facebook</a></li>
-                 <li><a href="https://twitter.com/Maykel131">Twitter</a></li>
-                 <li><a href="https://www.youtube.com/channel/UCBF5RSfYvUlp3GDZqrWKHtw?view_as=subscriber">Youtube</a></li>
-                 <li><a href="https://plus.google.com/u/0/112749268888905149542">Gmail</a></li>
-                 <li><a href="#">Otros</a></li>
+                <li><a href="https://www.facebook.com/Maykel.el.LEON">Facebook</a></li>
+                <li><a href="https://twitter.com/Maykel131">Twitter</a></li>
+                <li><a href="https://www.youtube.com/channel/UCBF5RSfYvUlp3GDZqrWKHtw?view_as=subscriber">Youtube</a></li>
+                <li><a href="https://plus.google.com/u/0/112749268888905149542">Gmail</a></li>
+                <li><a href="#">Otros</a></li>
               </ul>
-          </li>
-      </ul>
-    </nav>
-   </section>
-  </header>
-
+            </li>
+          </ul>
+       </nav>
+     </section>
+   </header> 
 
 
 
@@ -67,35 +74,48 @@
     <section id="wrapp">
     	<section id="main">
 
-       <!--fotos del slider-->
-   ,<!-- 		<section id="slideshow">
-         <a href="#"><img src="../imagenes/slideshow/imagen4.jpeg"/></a>
-         <a href="#"><img src="../imagenes/slideshow/foto2.jpg"/></a>
-         <a href="#"><img src="../imagenes/slideshow/foto3.jpg"/></a>
-        </section> -->
-
- 
-          
   
-
       <section id="contenido3">
-          <div class="clases1">
-             <article>
-          	 	   <div class="imagenn"><img src="infor2.jpg" alt="imagen1"></div>
+   
+         <div class="slider">
+            <div class="slider-wrapper theme-mi-slider">
+                <div id="slider" class="nivoSlider">     
+                    <img src="../slider/img/1.jpg" alt="" title="#htmlcaption1" />    
+                    <img src="../slider/img/2.jpg" alt="" title="#htmlcaption2" />    
+                    <img src="../slider/img/3.jpg" alt="" title="#htmlcaption3" />     
+                </div> 
+                <div id="htmlcaption1" class="nivo-html-caption">     
+                    <h2>Sean Bienvenidos</h2>
+                    <p>A mi sitio Web</p>
+                </div>
+                <div id="htmlcaption2" class="nivo-html-caption">     
+                    <h2>Mi nombre es Maykel Trejo</h2>
+                </div>
+                <div id="htmlcaption3" class="nivo-html-caption">     
+                    <h2>Gracias por visitar</h2>
+                </div>
+           </div>
+         </div>
+
+         <div class="clase clases1">
+             <div class="titu"> <h3> Diseño y Desarrollo Web </h3></div>
+             <article>      
+          	 	   <div class="imagenn">
+                   <img src="infor2.jpg" alt="imagen1"></div>
                  <div class="conte">
-                   <h3>Diseño y Desarrollo Web</h3>
                    <p> <br/>Mi equipo de trabajo y yo desarrollamos sitios web de Alta Calidad ideal para esas empresas que están iniciando y necesitan estrategias para promover sus ventas. <br/> <br/> Tener un sitio web es la mejor forma de hacer crecer tu negocio, por eso te ofrecemos los mejores estilos de portafolios y creamos páginas de acuerdo a tu necesidad y expectativas. <br/> <br/> Trabajamos con HTML, CSS, JS y PHP para bridarte sitios web únicos que solo tu negocio tendrá. <br/>  <br/> Te brindamos también servicio de mantenimiento a tu página web. Hosting y domínio incluído. <br/> <br/>
                    </p>
                    <p class="tele">Teléfono de Contacto: +55 85 987 09 6251 <br/> <br/></p>
                    <a class="boton" href="mailto:trejomaykel@gmail.com">CONTACTENOS</a>
                 </div>
             	</article>
-           </div>
-           <div class="clases2">
+         </div>
+
+         <div class="clase clases2">
+             <div class="titu"><h3>Servicio Técnico Maykel Trejo</h3></div>
              <article>
                  <div class="conte">
-                   <h3>Servicio Técnico Maykel Trejo</h3>
-                   <p> <br/>Te ofrece mantenimiento y actualización de Sistemas Operativos de tu ordenador a domicilio...<br/><br/>
+                   <p> <br/><br/>Te ofrece mantenimiento y actualización de Sistemas Operativos de tu ordenador a domicilio...<br/><br/>
                             Instalación de Windows 10,8,7 entre otros... <br/><br/>
                             Formateo y recuperación de archivos, Configuración de router y dispositivos del computador.<br/><br/>
                             Servicios únicamente en las ciudad de Fortaleza en Brasil por ahora. <br/><br/>
@@ -103,23 +123,29 @@
                    <p class="tele">Teléfono de Contacto: +55 85 987 09 6251 <br/> <br/></p>
                    <a class="boton" href="mailto:trejomaykel@gmail.com">CONTACTENOS</a>
                 </div>
-                <div class="imagenn"><img src="presen.jpg" alt="imagen1"></div>
+                <div class="imagenn">
+                  <img src="pc.jpg" alt="imagen1">
+                </div>
               </article>
-           </div>
-           <div class="clases1">
-             <article>
-                 <div class="imagenn"><img src="espa.jpg" alt="imagen1"></div>
-                 <div class="conte">
-                   <h3>Aprende español con Maykel</h3>
-                   <p> <br/><br/> Clases particulares de español online y presenciales en Fortaleza-Brasil. <br/><br/>
-                       Ideales para ti que estas queriendo aprender la lengua española.<br/><br/> El español es una lengua muy hablada en el mundo con mas de 500 millones de hablantes y sigue creciendo cada día mas.<br/><br> No esperes mas y comienza a aprender español con nativos. <br/> <br/>
+         </div>
 
+         <div class="clase clases1">
+             <div class="titu"><h3>Aprende español con Maykel</h3></div>
+             <article>
+                 <div class="imagenn">
+                   <img src="espa.jpg" alt="imagen1">
+                 </div> 
+                 <div class="conte">
+                   <p> 
+                    <br/><br/> Clases particulares de español online y presenciales en Fortaleza-Brasil. <br/><br/>
+                    Ideales para ti que estas queriendo aprender la lengua española.<br/><br/> El español es una lengua muy hablada en el mundo con mas de 500 millones de hablantes y sigue creciendo cada día mas.<br/><br> No esperes mas y comienza a aprender español con nativos. <br/> <br/>
                    </p>
                    <p class="tele">Teléfono de Contacto: +55 85 987 09 6251 <br/> <br/></p>
                    <a class="boton" href="mailto:trejomaykel@gmail.com">CONTACTENOS</a>
                 </div>
               </article>
-           </div>
+         </div>
+
       </section><!--cierre de contenido -->
 
       <footer>

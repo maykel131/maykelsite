@@ -11,19 +11,23 @@
       <!-- aqui hacemos referencia a la carpeta de iconos-->
 
       <link rel="shortcut icon" href="iconos/emble.ico">
-      
 
-      <!---slider   -->
+      <!--                 slider new                 -->
+              <link rel="stylesheet" href="slider/css/nivo-slider.css">
+              <link rel="stylesheet" href="slider/css/mi-slider.css">
 
-      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-      <script src="js/jquery.slides.min.js"></script>
-      <script>
-        $(function(){
-          $("#slideshow").slidesjs()
-        });
-      </script>
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+              <script src="slider/js/jquery.nivo.slider.js"></script>
 
-     <!-- final del slider-->
+              <script type="text/javascript"> 
+                $(window).on('load', function() {
+                    $('#slider').nivoSlider(); 
+                }); 
+              </script>
+       <!--                 slider new                 -->
+                  
+
+  
 
          <title> Website del Ingeniero Maykel Trejo</title>
   </head>
@@ -32,7 +36,7 @@
   	<header>
       <section id="cabeza1">
   	  <div id="subheader">
-         <div id="logoo"> <img src="imagenes/logo.png"> </div>
+         <div id="logoo"> <img src="imagenes/trilogia.png"> </div>
          <div id="logotipo"><a href=""> Wolfobiecer </a></div>
   	  </div>
      </section>
@@ -44,7 +48,7 @@
           <li><a class="menu uno" href="#"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
           <li><a class="menu dos" href="paginas/pagina1.html"><span class="tercero"><i class="icon icon-briefcase"></i></span>Servicios</a></li>
           <li><a class="menu tres" href="#"><span class="segundo"><i class="icon icon-pencil"></i></span>Categorias</a></li>
-          <li><a class="menu cuatro" href="#"><span class="cuarto"><i class="icon icon-database"></i></span>Acerca de</a></li>
+          <li><a class="menu cuatro" href="#"><span class="cuarto"><i class="icon icon-database"></i></span>Block</a></li>
           <li><a class="menu cinco" href="#"><span class="quinto"><i class="icon icon-whatsapp"></i></span>Contacto</a>
               <ul>
                  <li><a target="_blank" href="https://www.facebook.com/Maykel.el.LEON">Facebook</a></li>
@@ -64,20 +68,34 @@
 
 
 
-    <section id="wrap">
-    	  <section id="main">
+        <section id="wrap">
+     	  <section id="main">
 
-       <!--fotos del slider-->
-    	   	<section id="slideshow">
-           <a href="#"><img src="imagenes/slideshow/foto1.jpg"/></a>
-           <a href="#"><img src="imagenes/slideshow/foto2.jpg"/></a>
-           <a href="#"><img src="imagenes/slideshow/foto3.jpg"/></a>
-           
-       </section>
+     
+    	   <div class="slider">
+            <div class="slider-wrapper theme-mi-slider">
+                <div id="slider" class="nivoSlider">     
+                    <img src="slider/img/1.jpg" alt="" title="#htmlcaption1" />    
+                    <img src="slider/img/2.jpg" alt="" title="#htmlcaption2" />    
+                    <img src="slider/img/3.jpg" alt="" title="#htmlcaption3" />     
+                </div> 
+                <div id="htmlcaption1" class="nivo-html-caption">     
+                    <h2>Sean Bienvenidos</h2>
+                    <p>A mi sitio Web</p>
+                </div>
+                <div id="htmlcaption2" class="nivo-html-caption">     
+                    <h2>Mi nombre es Maykel Trejo</h2>
+                </div>
+                <div id="htmlcaption3" class="nivo-html-caption">     
+                    <h2>Gracias por visitar</h2>
+                </div>
+           </div>
+         </div>
 
-    	 <section id="Bienvenido">
+
+    	   <section id="Bienvenido">
     			<article>
-    				<hgroup><h2>Bienvenido a mi sitio web mi nombre Maykel Abiecer Trejo</h2></hgroup>
+    				<hgroup><h2>  ¿Quién soy en realidad? </h2></hgroup>
     				<p>
     					<ul>
 						   <li>Soy un Ingeniero Venezolano, trabajador responsable, y muy comprometido con tareas establecidas, tengo como objetivo poner em practica mis conocimientos informatios em el Brasil y crecer como profesional cada dia mas.</li>
@@ -91,7 +109,7 @@
     		</section>
           
   
-
+        <div class="centro">
         <section id="contenido">
           	<article>
           		<hgroup><h2 class="titulo">Biografia de Maykel Trejo</h2></hgroup>
@@ -110,7 +128,7 @@
 
               </p>
             </article>
-          </section>
+        </section>
 
 
          <aside>
@@ -123,50 +141,53 @@
                  <li> <a target="_blank" href="pdf/cartadeculminacion.pdf"> Ver Certificado de conclusion de la Carrera </a></li>
                  <li> <a target="_blank" href="http://www.unefa.edu.ve/portal/"> Ir al web site de la UNEFA</a></li>
 				         <li> <p> Telefone: </p><a href="https://api.whatsapp.com/send?phone=5585987096251">+55 85 987 096251</a></li>
-                 <li> <p> E-mail: </p><a href="#">trejomaykel@gmail.com</a></li>
+                 <li> <p> E-mail: </p><a href="#">trejomaykel@gmail.com <br/><br/><br/><br/><br/></a></li>
           		</ul>
             </section>
 
-              <section class="widget"><img src="imagenes/trabajador.png"/></section>
-          </aside>
+              <section class="widget"><img src="imagenes/digitali.png"/><br/><br/></section>
+         </aside>
+        </div> <!-- fin del centro-->
 
              
-
-          <section id="contenido2">
+        
+        <section id="contenido2">
            <article>
               <hgroup><h2 class="titulo">Trabajo de grado de Maykel Trejo para optar al título de Ingeniero de Sistemas.</h2></hgroup>
               <p class="fecha"> 10 de junio de 2017</p>
               <img class="thumb" src="imagenes/tesis.jpeg" alt="imagen1">
-              <p>El estudio, fue desarrollado bajo la modalidad de una investigación de proyecto factible con un diseño de campo, en este contexto el objetivo general se orienta en proponer un sistema automatizado de riego por aspersión para el cultivo de ajo (allium sativum) en la finca “Colmenares”, sector bojo, municipio Andrés Eloy blanco, Barquisimeto estado Lara. Atendiendo a la modalidad investigativa, las técnicas e instrumentos para la recolección de la información han sido la encuesta y la entrevista. La población estuvo conformada por 32 trabajadores y la muestra por la misma cantidad. En el desarrollo del prototipo se usaron las herramientas de desarrollo NETBEANS para hacer la aplicación en lenguaje JAVA, dicha aplicación permite programar las fechar y horas exactas que se aplicara el regado también conecta con la base de datos en este caso un servidor apacha manejado por XAMPP, donde se guardan todos los registros de encendidos y usuarios. Esta aplicación a su vez conecta con el con el microcontrolador Arduino usado para dar encendidos a las bombas de agua que llevan el agua a través de mangueras al cultivo en este caso de ajo. El prototipo también cuenta con sensores de humedad de temperatura y sensor de lluvia, estos actúan cuando el terreno llega a la humedad y temperatura ideal esto se encarga de apagar el sistema de riego. Este trabajo de investigacion fue presentado por Maykel Trejo y David Mejias en la UNEFA a los 10 dias del mes de junio de 2017 para optar al titulo de Ingeniero de Sistemas.
-              <br/> <br/>
-               </p>
-                <iframe width="960" height="480" src="https://www.youtube.com/embed/0X3W49FTZtQ" frameborder="0" gesture="media" allowfullscreen></iframe>
+              <p>El estudio, fue desarrollado bajo la modalidad de una investigación de proyecto factible con un diseño de campo, en este contexto el objetivo general se orienta en proponer un sistema automatizado de riego por aspersión para el cultivo de ajo (allium sativum) en la finca “Colmenares”, sector bojo, municipio Andrés Eloy blanco, Barquisimeto estado Lara. Atendiendo a la modalidad investigativa, las técnicas e instrumentos para la recolección de la información han sido la encuesta y la entrevista. La población estuvo conformada por 32 trabajadores y la muestra por la misma cantidad. En el desarrollo del prototipo se usaron las herramientas de desarrollo NETBEANS para hacer la aplicación en lenguaje JAVA, dicha aplicación permite programar las fechar y horas exactas que se aplicara el regado también conecta con la base de datos en este caso un servidor apacha manejado por XAMPP, donde se guardan todos los registros de encendidos y usuarios. Esta aplicación a su vez conecta con el con el microcontrolador Arduino usado para dar encendidos a las bombas de agua que llevan el agua a través de mangueras al cultivo en este caso de ajo. El prototipo también cuenta con sensores de humedad de temperatura y sensor de lluvia, estos actúan cuando el terreno llega a la humedad y temperatura ideal esto se encarga de apagar el sistema de riego. Este trabajo de investigacion fue presentado por Maykel Trejo y David Mejias en la UNEFA a los 10 dias del mes de junio de 2017 para optar al titulo de Ingeniero de Sistemas. <br/> <br/> </p>
             </article>
+            <iframe  src="https://www.youtube.com/embed/0X3W49FTZtQ" frameborder="0" gesture="media" allowfullscreen></iframe>
+
            </section>
+
+       
+        <footer>
+              <section id="acerca-de">
+          
+              <article>
+               <hgroup><h3>Redes sociales de Maykel Trejo</h3><hgroup>  
+                <p>En la actualidad, el análisis de las redes sociales se ha convertido en un método de estudio en ciencias como la antropología o la sociología. Internet y las nuevas tecnologías favorecen el desarrollo y ampliación de las redes sociales.Las redes sociales en internet son aplicaciones web que favorecen el contacto entre individuos. No es la excepción con Maykel Trejo ya que posee cuentas en las redes sociales mas importantes de la actualidad.
+                 </p>
+                </article>
+              </section>
+
+              <section id="redes-s">
+                <div class="email"><a href="https://plus.google.com/u/0/112749268888905149542"></a></div>
+                <div class="twitter"><a href="https://twitter.com/Maykel131"></a></div>
+                <div class="youtube"><a href="https://www.youtube.com/channel/UCBF5RSfYvUlp3GDZqrWKHtw?view_as=subscriber"></a></div>
+                <div class="facebook"><a href="https://www.facebook.com/Maykel.el.LEON"></a></div>
+              </section>
+        </footer>
+
+      <div id="copyright"><p> <br/> <br/> Este sitio web fue creado por el Ingeniero de sistemas Maykel Abiecer Trejo usando HTML y CSS <br/></p></div> 
 
 
        </section>
+    </section>
 
-      <footer>
-      	<section id="acerca-de">
-      		
-      		<article>
-      			<hgroup><h3>Redes sociales de Maykel Trejo</h3><hgroup>
-      			<p>En la actualidad, el análisis de las redes sociales se ha convertido en un método de estudio en ciencias como la antropología o la sociología. Internet y las nuevas tecnologías favorecen el desarrollo y ampliación de las redes sociales.Las redes sociales en internet son aplicaciones web que favorecen el contacto entre individuos. No es la excepción con Maykel Trejo ya que posee cuentas en las redes sociales mas importantes de la actualidad.
-           </p>
-      		</article>
-      	</section>
-
-      	<section id="redes-s">
-      		<div class="email"><a href="https://plus.google.com/u/0/112749268888905149542"></a></div>
-      	    <div class="twitter"><a href="https://twitter.com/Maykel131"></a></div>
-      		<div class="youtube"><a href="https://www.youtube.com/channel/UCBF5RSfYvUlp3GDZqrWKHtw?view_as=subscriber"></a></div>
-            <div class="facebook"><a href="https://www.facebook.com/Maykel.el.LEON"></a></div>
-      	</section>
-      </footer>
-
-      <div id="copyright"><p>Este sitio web fue creado por el Ingeniero de sistemas Maykel Abiecer Trejo usando HTML y CSS </p></div>
-
+    
 
 
 
